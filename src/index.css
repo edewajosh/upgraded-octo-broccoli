@@ -1,13 +1,275 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Source+Sans+Pro:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+  box-sizing: border-box;
+}
+.navbar{
+  margin-top: 30px;
+  padding: 0 15px 0 5px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbarNav{
+  list-style: none;
+  margin-top: 40px;
+}
+
+.navbarItem{
+  font-size: 23px;
+  margin-top: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  word-spacing: 1em;
+  line-height: 2em;
+  cursor: pointer;
+}
+.navbarItem .riskProfile{
+  word-spacing: 0em;
+}
+
+.navbar h3{
+  font-family: 'Arapey', serif;
+  font-size: 23px;
+}
+
+.dashboardMain:after{
+  margin-top: 5px;
+  border: 5px solid rgb(255, 243, 220);
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.nav{
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+.funding{
+  width: 80%;
+  float: left;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.titleBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleBar .fundingTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: larger;
+}
+.titleBar input {
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+  width: 40%;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.titleBar .searchIcon{
+  font-size: 25px;
+  position: relative;
+  left: -8em;
+  top: 0.5em;
+}
+
+.titleBar .userProfile{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+.fundingContent{
+  display: flex;
+  margin-top: 5px;
+  background-color: #f7f7f7;
+}
+
+.fundingContent .leftContent{
+  width: 60%;
+  margin: 10px;
+}
+.leftContent .container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.leftContent .container .firstcontainer{
+  padding: 5px 10px 10px 5px;
+  width: 60;
+}
+
+.leftContent .container .firstcontainer .services{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+}
+.leftContent .container .firstcontainer .services .loan{
+  background-color: #ffeac3;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 5px 0 5px;
+}
+
+.leftContent .container .firstcontainer .services .capital{
+  background-color: #ffeac3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+  width: 50%;
+}
+
+.leftContent .container .secondcontainer{
+  background-color: #feaa00;
+  padding: 10px 10px 5px 5px;
+  border-radius: 5px;
+  width: 40%;
+  font-family: 'Montserrat', sans-serif;
+}
+.leftContent .container .secondcontainer .privatecapital{
+  background-color: #ffc41b;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.leftContent .container .secondcontainer .loanborrowed{
+  background-color: #ffc41b;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.leftContent .container .secondcontainer .h2{
+  font-size: 25px;
+}
+.fundingContent .rightContent{
+  width: 40%;
+  margin-left: 10px;
+}
+
+.barchart{
+  background-color: #ffffff;
+}
+
+.piedescription{
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 30%;
+  padding: 0px 0px 0px 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+.pie .loan{
+  position: relative;
+  left: 16em;
+  bottom: 10em;
+
+}
+.pie .amount{
+  position: relative;
+  left:0.5em;
+  bottom: 19em;
+}
+.pie .title{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.pie .title .textbold{
+  font-family: 'Poppins', sans-serif;
+}
+.pie .title .para{
+  padding-right: 5px;
+  color: #8dd8c2;
+  font-size: 20px;
+  font-weight: 20px;
+}
+.piefooter{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.piefooter .loanBalance {
+  display: flex;
+}
+.piefooter .loanBalance .cirlceCygan {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  top: 1em;
+  right: 1.5em;
+  background-color: rgba(229,229,228,255);
+}
+.piefooter .loanBalance .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  top: 1em;
+  right: 1.2em;
+  background-color: rgba(254,170,0,255);
+}
+
+.container .secondcontainer h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.userProfile{
+  margin-top: 10px;
+}
+.userProfile .account{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.userProfile .account .userImage{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-right: 5px;
+}
+.userProfile .account .accountDetails{
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: 0.8em;
+  line-height: 0.5em;
+}
+
+.userProfile .email, .userProfile .notification{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(254,170,0,255);
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.userProfile .email{
+  position: relative;
+  right: 13.5em;
+  bottom: 1.5em;
+}
+
+.userProfile .notification{
+  position: relative;
+  right: 13em;
+  bottom: 1.5em;
 }
