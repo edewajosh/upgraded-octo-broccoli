@@ -1,4 +1,4 @@
-import { BsArrowUpRightCircle } from 'react-icons/bs'
+import { FiArrowUpRight } from 'react-icons/fi'
 import BarChart from './charts/BarChart'
 
 const LeftContent = () => {
@@ -11,11 +11,11 @@ const LeftContent = () => {
                 <div className="services">
                     <div className="loan">
                         <h3>Get A Loan</h3>
-                        <p><BsArrowUpRightCircle/></p>
+                        <p className='arrowRight'><FiArrowUpRight/></p>
                     </div>
                     <div className="capital">
                         <h3>Get Private Capital</h3>
-                        <p><BsArrowUpRightCircle/></p>
+                        <p className='arrowRight'><FiArrowUpRight/></p>
                     </div>
                 </div>
             </div>

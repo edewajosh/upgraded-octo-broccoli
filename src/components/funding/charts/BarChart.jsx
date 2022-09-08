@@ -9,6 +9,7 @@ import {
     Legend,
   } from 'chart.js';
 
+  import { IoIosArrowDown } from 'react-icons/io';
   
 ChartJS.register(
     CategoryScale,
@@ -57,7 +58,7 @@ const BarChart = () => {
     };
     return (
         <div className="barchart">
-            <p className="barchartTitle">Loan History</p>
+            <p className="barchartTitle">Loan History <IoIosArrowDown /></p>
             <Bar options={options} data={data} />
         </div>
     )

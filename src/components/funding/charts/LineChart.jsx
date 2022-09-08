@@ -10,6 +10,8 @@ import {
   Legend,
 } from 'chart.js';
 
+import { AiFillEye } from 'react-icons/ai';
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -57,8 +59,15 @@ const LineChart = () => {
     ],
   };
   return (
-    <div>
-      <h3>Current Loans</h3>
+    <div className="lineChart">
+      <div className="lineChartTitle">
+        <p className="currentLoan">Current Loans</p>
+        <p className="privateEquity">Current Private equity</p>
+      </div>
+      <div className="lineChartAmount">
+        <p className="mbecha">KES 3,000,000 <span><AiFillEye /></span></p>
+        <p className="deni">Borrowed loan</p>
+      </div>
       <Line options={options} data={data}/>
     </div>
   )
