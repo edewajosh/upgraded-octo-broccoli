@@ -38,7 +38,7 @@ const BarChart = () => {
         responsive: true,
         plugins: {
             legend: {
-            position: 'top',
+            display: false,
             }
         },
         scales: {

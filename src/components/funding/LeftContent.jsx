@@ -20,7 +20,7 @@ const LeftContent = () => {
                 </div>
             </div>
             <div className="secondcontainer">
-                <h2>Funds statistics</h2>
+                <p>Funds statistics</p>
                 <div className="privatecapital">
                     <h4>KES 6,690,900</h4>
                     <h5>Total private Capital</h5>

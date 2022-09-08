@@ -27,7 +27,7 @@ const LineChart = () => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top',
+        display: false
       },
       title: {
         display: false,
@@ -48,7 +48,7 @@ const LineChart = () => {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
+        label: false,
         data: [25, 20, 25, 15, 30, 20, ],
         borderColor: 'rgba(254,170,0,255)',
         backgroundColor: 'rgba(254,170,0,255)',
