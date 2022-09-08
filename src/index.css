@@ -25,6 +25,17 @@
   line-height: 2em;
   cursor: pointer;
 }
+.navbarListItemNameActive{
+  background-color: #ffc41b;
+  font-size: 23px;
+  margin-top: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  word-spacing: 1em;
+  line-height: 2em;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+  padding-left: 10px;
+}
 .navbarItem .riskProfile{
   word-spacing: 0em;
 }
@@ -204,6 +215,8 @@
 }
 .piefooter .loanBalance {
   display: flex;
+  position: relative;
+  bottom: 4em;
 }
 .piefooter .loanBalance .cirlceCygan {
   width: 25px;
@@ -272,4 +285,12 @@
   position: relative;
   right: 13em;
   bottom: 1.5em;
+}
+.bar{
+  border-radius: 5px;
+}
+.barchart .barchartTitle{
+  font-family: 'Playfair Display', serif;
+  font-size: medium;
+  padding-left: 10px;
 }

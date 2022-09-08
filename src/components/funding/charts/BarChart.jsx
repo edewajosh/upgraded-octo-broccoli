@@ -57,7 +57,7 @@ const BarChart = () => {
     };
     return (
         <div className="barchart">
-            <h3>Loan History</h3>
+            <p className="barchartTitle">Loan History</p>
             <Bar options={options} data={data} />
         </div>
     )
