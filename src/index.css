@@ -170,6 +170,10 @@
 .fundingContent .rightContent{
   width: 40%;
   margin-left: 10px;
+  background-color: #ffffff;
+  margin: 10px 2px 5px 0;
+  border-radius: 5px;
+  padding-left: 5px;
 }
 
 .barchart{
