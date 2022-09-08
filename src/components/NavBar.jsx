@@ -31,7 +31,7 @@ const NavBar = () => {
                   <GrRisk/> <span className="riskProfile">Risk Profile</span>
                 </li>
                 <li className={ pathMatchRoute('/funding') ? 'navbarListItemNameActive' : 'navbarItem'} 
-                    onClick={() => navigate('funding')}>
+                    onClick={() => navigate('/funding')}>
                   <GrMoney/> Funding 
                 </li>
                 <li className={ pathMatchRoute('/konnect') ? 'navbarListItemNameActive' : 'navbarItem'} 

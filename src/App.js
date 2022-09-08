@@ -5,7 +5,7 @@ const App = () =>{
     <>
       <Router>
         <Routes>
-          <Route path="" element={<Main />}></Route>
+          <Route path="/" element={<Main />}></Route>
           <Route path="/business" element={<Main />}></Route>
           <Route path="/risk-profile" element={<Main />}></Route>
           <Route path="/konnect" element={<Main />}></Route>
