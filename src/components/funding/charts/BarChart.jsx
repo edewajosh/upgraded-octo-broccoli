@@ -40,6 +40,7 @@ const BarChart = () => {
             legend: {
             display: false,
             }
+
         },
         scales: {
             xAxis: {
@@ -60,6 +61,10 @@ const BarChart = () => {
         <div className="barchart">
             <p className="barchartTitle">Loan History <IoIosArrowDown /></p>
             <Bar options={options} data={data} />
+            <div className="details">
+              <p className="legendDetails">KES 640,000</p>
+              <div className="vertical"></div>
+            </div>
         </div>
     )
 }

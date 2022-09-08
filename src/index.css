@@ -347,3 +347,20 @@
   background-color: #ffffff;
   text-align: center;
 }
+.barchart .details {
+  position: relative;
+  bottom: 22em;
+  left: 17em;
+  line-height: 1px;
+}
+.barchart .details .legendDetails{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #8d6c6c;
+}
+.barchart .details .vertical {
+  border-left: 6px solid #8d6c6c;
+  height: 10px;
+  margin-left: 50px;
+}
